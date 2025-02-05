@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flex</title>
+</head>
+<body>
+    <h1>CSS Flex - A layout model</h1>
+    <ul>
+        <li id="one">item one</li>
+        <li id="two">item two</li>
+        <li id="three">item three</li>
+    </ul>
+    <style>
+        ul{
+            list-style-type: none;
+            border: 2px solid green;
+            padding: 10px;
+            height: 400px;
+            display: flex; 
+            /* so by default the are set to row flex  and by default they stretch*/
+            align-items:center ;
+            justify-content: end;
+        }
+        li{
+            border:1px solid red;
+            margin:8px;
+        }
+        #one{
+            flex-grow: 1;
+        }
+        #two{
+            flex-grow: 3;
+        }
+        #three{
+            flex-grow: 1;
+        }
+    </style>
+</body>
+</html>
