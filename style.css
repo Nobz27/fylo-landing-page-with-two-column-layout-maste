@@ -159,8 +159,15 @@ footer a{
     display: block;
     width: 100px;
     margin-bottom: 8px;
+    margin-left: 0;
   }
   footer{
     flex-direction: column;
+  }
+  header img{
+    height:20px;
+  }
+  header,section,footer{
+    padding:15px 20px;
   }
 }
